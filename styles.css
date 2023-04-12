@@ -1,0 +1,467 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+h4 {
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+    background-color: #999;
+    color: #FFF;
+    padding: 15px;
+} 
+header {
+    height: 70px;
+    background-color: #333;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.container {
+    max-width: 1140px;
+    margin: auto;
+    display: flex;
+}
+.logo img{
+    width: 70px;
+    margin-left: 20px;
+}
+.logo a {
+    text-decoration: none;
+}
+.menu-opener {
+    display: none;
+}
+menu {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 30px;
+}
+menu ul, li {
+    list-style: none;
+}
+menu ul {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+menu li a {
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0 10px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    border-bottom: 5px solid #333;
+}  
+menu li a:hover, .active a {
+    border-bottom: 5px solid #FFF;
+}
+
+
+
+.about {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(to bottom, #333 10%, transparent 90%); 
+    margin-top: 60px;
+} 
+.about_img {
+    width: 400px;
+    margin-left: 10px;
+}
+.about_img img {
+    border: 7px solid #FFF;
+    border-radius: 50%;
+    background-color: #FFF;
+    margin: 40px 0
+}  
+.about_description {
+    flex-direction: column;
+    margin-left: 20px;
+}   
+.about h3 {
+    font-size: 70px;
+    font-family: bold;
+    color: #FFF; 
+    padding: 0 30px;   
+    margin-top: 40px;
+}
+.about h5 {
+    font-size: 30px;
+    padding: 0 30px; 
+}
+.about p {
+    line-height: 25px;
+    padding: 20px 30px;
+    font-size: 17px;
+    text-indent: 30px;
+    text-align: justify;
+}
+.about_logo_area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.about_logo_linkedin,
+.about_logo_github {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
+.about_logo_linkedin img,
+.about_logo_github img{
+    width: 30px;
+    height: 30px;
+}
+
+
+
+
+.skills {
+    display: flex;
+    flex-direction: column;
+}
+.skills_area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+.skills_item {
+    transform: scale(0.8);
+    transition: all ease 0.2s;
+    margin-bottom: 30px;
+}
+.skills_item:hover {
+    transform: scale(1);
+}
+.skills_item img {
+    width:120px;
+}
+    
+
+
+.projects {
+    display: flex;
+    flex-direction: column;
+}
+.projects_area {
+    margin: 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.projects_item {
+    width: 150px;
+    height: 150px;
+    margin-right: 30px;
+    background-color: #000;
+    transition: all ease 0.2s;
+    margin-bottom: 50px;
+}
+.projects_item img {
+    width: 150px;   
+    height: 150px;
+    align-items: center;
+    transform: scale(0.9);
+    transition: all ease 0.2s;
+}
+.projects_item h3 {
+    font-size: 15px;
+    text-align: center;
+    padding: 10px;
+}
+.projects_item img:hover {
+    background-color: #999;
+    transform: scale(1);
+}
+
+
+
+
+.works_area {
+    margin: 15px 25px;
+}   
+.works_geral {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.works_area_description,
+.works_area_description2 {
+    display: none;
+}
+.works_area_description p,
+.works_area_description2 p {
+    font-size: 18px;
+    line-height: 25px;
+} 
+.works_title{
+    display: flex;
+}
+.works_title span {
+    margin: 5px;
+    margin-bottom: 20px;
+}
+.works_area_h2 {
+    display: flex;
+    align-items: center;
+}
+.works_area_h2 img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    display: block;
+    border: 1px solid #999;
+    border-radius: 50%;
+}
+.works h2 {
+    margin-bottom: 10px;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+
+
+
+.contact {
+    margin-bottom: 40px;
+}
+.contact_area {
+    display: flex;
+    flex-direction: column;    
+    margin: 30px 0; 
+}
+.contact_title {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.contact_area_message {
+    display: flex;
+}
+.contact_area_input {
+    margin-right: 30px;
+    width: 500px;
+}
+.contact_area_input form {
+    width: 100%;
+    padding: 20px 30px;
+    font-size: 15px;
+    outline: none;
+    margin-bottom: 5px;
+}
+.contact_area_input input,
+.contact_area_input textarea {
+    padding: 5px 10px;
+    font-size: 15px;
+}
+.contact_area_input label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.contact_area_input button {
+    display: block;
+    padding: 5px 15px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    color: #000;
+    cursor: pointer;
+}
+.contact_area_input fieldset {
+    padding: 10px 25px;
+}
+.contact_area_input legend {
+    font-size: 20px;
+    font-weight: bold   ;
+}
+
+.contact_area_description {
+    flex: 1;
+    line-height: 25px;
+    margin-top: 30px;
+}
+.button {
+    display: block;
+    border-radius: 10px;
+    background-color: #777;
+    color: #FFF;
+    transition: all ease 0.2s;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: #333;
+}
+.contact_curriculum {
+    margin-top: 15px;
+}
+.contact_curriculum a {
+    display: inline-block;
+    padding: 5px 15px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: #333;
+    color: #FFF;
+    transition: all ease 0.2s;
+}
+.contact_curriculum a:hover {
+    background-color: #777;
+}
+
+
+
+footer {
+   background-color: #333;
+   color: #FFF;
+   text-align: center;
+   padding: 30px 0;
+}
+
+
+
+@media (min-width:501px) and (max-width: 800px) {
+    .menu-opener {
+        display: block;
+        height: 50px;
+        margin-top: 10px;
+    }
+    nav {
+        display: none;
+        position: absolute;
+        z-index: 99;
+        background-color: rgba(0,0,0,0.6);
+        width: 50vw;
+        height: calc(100vh - 70px);
+        top: 70px;
+        right: 0;   
+    }
+    menu ul {
+        flex-direction: column;
+        margin-left: 20px;
+    }
+    menu li a {
+        font-weight: bold;
+        height: 80px;
+        font-size: 25px;  
+        border: 0;  
+        color: #FFF;
+    }
+    menu li a:hover, .active a {
+        border: 0;
+        color:#ebad5c;
+    }
+    .about {
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+    .about h3 {
+        font-size: 55px;
+    }
+    .about p {
+        padding: 20px 30px;
+        margin-right: 15px;
+        font-size: 25px;
+        text-align: 30px;
+    }
+    .about_img {
+        width: 300px;
+        margin-right: 50px;
+    }
+    .about_img img {
+        margin-top: 50px;
+    }
+    .contact_area_message {
+        flex-direction: column;
+    }
+    .contact_area_description {
+        margin: 5px 30px;
+    }
+    menu {
+        margin-right: 30px;
+    }
+}
+
+@media (max-width: 500px) {
+    .menu-opener {
+        display: block;
+        height: 50px;
+        margin-top: 10px;
+    }
+    nav {
+        display: none;
+        position: absolute;
+        z-index: 99;
+        background-color: rgba(0,0,0,0.6);
+        width: 50vw;
+        height: calc(100vh - 70px);
+        top: 70px;
+        right: 0;   
+    }
+    menu ul {
+        flex-direction: column;
+        margin-left: 20px;
+    }
+    menu li a {
+        font-weight: bold;
+        height: 80px;
+        font-size: 23px;  
+        border: 0;  
+        color: #FFF;
+    }
+    menu li a:hover, .active a {
+        border: 0;
+        color:#ebad5c;
+    }
+    .about {
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+    .about_img {
+        width: 250px;
+        margin-right: 30px;
+
+    }
+    .about_img img {
+        width: 250px;
+    }
+    .about h3 {
+        font-size: 40px;
+    }
+    .about h5 {
+        margin-top:5px;
+        font-size: 20px;
+    }
+    .about p {
+        font-size: 18px;
+        margin-right: 20px; 
+    }
+    .contact_area_message {
+        flex-direction: column;
+    }
+    .contact_area_description {
+        margin: 5px 30px;
+    }
+    .contact_area_input {
+        width: 360px;
+    }
+    menu li {
+        font-size: 12px;
+        margin-right: 10px;
+    }
+}
