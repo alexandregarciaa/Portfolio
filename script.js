@@ -1,9 +1,17 @@
+let theme = document.getElementById('theme');
+let body = document.querySelector('body');
+
+theme.addEventListener('click', () => {
+    theme.classList.toggle('dark');
+    body.classList.toggle('dark');
+});
+
 const openWorks = document.querySelector('.open_works');
 
-openWorks.addEventListener('click', function(){
+openWorks.addEventListener('click', function () {
     const worksArea = document.querySelector('.works_area_description');
 
-    if(worksArea.style.display === "none") {
+    if (worksArea.style.display === "none") {
         worksArea.style.display = "block";
     } else {
         worksArea.style.display = "none";
@@ -12,10 +20,10 @@ openWorks.addEventListener('click', function(){
 
 const openWorks2 = document.querySelector('.open_works2');
 
-openWorks2.addEventListener('click', function(){
+openWorks2.addEventListener('click', function () {
     const worksArea = document.querySelector('.works_area_description2');
 
-    if(worksArea.style.display === "none") {
+    if (worksArea.style.display === "none") {
         worksArea.style.display = "block";
     } else {
         worksArea.style.display = "none";
@@ -24,10 +32,10 @@ openWorks2.addEventListener('click', function(){
 
 const menuOpener = document.querySelector('.menu-opener');
 
-menuOpener.addEventListener('click', function() {
-    const navMenu = document.querySelector('nav'); 
+menuOpener.addEventListener('click', function () {
+    const navMenu = document.querySelector('nav');
 
-    if(navMenu.style.display === "none") {
+    if (navMenu.style.display === "none") {
         navMenu.style.display = 'block';
     } else {
         navMenu.style.display = 'none';
